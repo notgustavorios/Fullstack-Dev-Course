@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        .box{
+            border: 5px solid black;
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            top: 0;
+            left: 0;
+            background-color: black;
+            animation-name: slideMe;
+            animation-duration: 5s;
+
+        }
+        @keyframes slideMe{
+            0%{
+                top: 0;
+                left: 0;
+            }
+            25%{
+                left: 80%;
+                top: 0;
+
+            }
+            50%{
+                top: 90%;
+                left: 90%;
+            }
+            75%{
+                top: 90%;
+                left: 0;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

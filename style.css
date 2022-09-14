@@ -1,0 +1,73 @@
+body{
+    background-color: black;
+    
+}
+div{
+    color: white;
+}
+p{
+    color: white;
+}
+.floating-image{
+    float: left;
+    height: 200px;
+    width: 200px;
+    border: 1px solid white;
+    box-shadow: 10px 10px 10px whitesmoke;
+    margin: 15px;
+}
+div#shepard{
+    background-image: url("shepard.jpg");
+    background-size: contain;
+    color: white;
+    font-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    
+    height: 400px;
+    width: 100%;
+}
+#center-example{
+    text-align: center;
+}
+.border-practice{
+    border-color: red;
+    border-style: solid;
+    border-width: 20px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: large;
+}
+.inline{
+    border: 5px solid blue;
+    display: inline;
+}
+div.width{
+    display: inline-block;
+    width: 50%;
+    border: 5px solid red;
+
+}
+.box{
+    background-image: url(shepard.jpg);
+    display: inline-block;
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    width: 400px;
+    border: 1px solid white;
+    box-shadow: 5px 5px 20px white;
+}
+.box2{
+    border: 1px solid white;
+    padding: 10px 15px 20px 25px;
+    height: 300px;
+    width: 300px;
+    color: white;
+    margin: 10px auto 10px auto;
+    display: block;
+
+}

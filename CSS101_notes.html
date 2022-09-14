@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>CSS101</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-size: 12px;
+        }
+        .blue{
+            color: blue;
+            background-color: red;
+        }
+        div p strong{
+            color: blue;
+            font-size: 20px;
+        }
+        #testing_rgba{
+            background-color: rgba(243, 239, 4, 0.582);
+            color: white;
+            font-size: 30px;
+        }
+        a {
+            color: black;
+            background-color: white;
+        }
+        a:hover{
+            color: blue;
+            font-weight: bold;
+        }
+        a:enabled{
+            color: red;
+        }
+        a:visited{
+            color: yellow;
+        }
+        h1.tiny{
+            font-size: 3px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Internal CSS is what makes this text white and background black
+    </p>
+    <div class="blue">
+        <p>
+            in CSS, you declare classes with .className, and give elements that style with class="className" within the element tag
+        </p>
+    </div>
+    <h1 class="blue">This is another thing that I want to make blue</h1>
+    <p class="blue">
+        This will also be blue
+    </p>
+    <div>  
+        <p>
+            To make something <strong>bold</strong>, use the &ltstrong&gt tag inline
+        </p>
+    </div>
+    <div>
+        <p>
+            <p>
+                <strong>if i wanted to target this nested sentence, i need to make a nested selector.</strong>
+            </p>
+        </p>
+    </div>
+    <div>
+        <p id="testing_rgba">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusantium hic corporis necessitatibus culpa. Quibusdam veritatis reiciendis voluptas minima dolore distinctio, cumque tenetur. Ut eos dolores quidem explicabo, nam exercitationem.if i wanted to target this nested sentence, i need to make a nested selector. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas veniam esse tempore. Velit porro quos accusantium, dolor obcaecati illum dolorum expedita non magnam ipsum! Quod qui delectus quia temporibus dicta. 
+            </p>
+
+        </p>
+    </div>
+
+
+    <div>
+        <a href="https://instagram.com/gustavofleek">This is my instagram</a>
+    </div>
+
+    <div>
+        <h1 class="tiny">
+            Make this text super tiny
+
+        </h1>
+    </div>
+
+
+
+</body>
+</html>

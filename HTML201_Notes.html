@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML 201 Notes</title>
+</head>
+<body>
+    <div id="top"></div>
+    <a href="#bottom">Scroll to the bottom of the page</a>
+    <br>
+    <a href="HTML201_Project.html">Link to Project!</a>
+    <table border="1" width="100%">
+        <tr>
+            <td>
+                TD stands for table data cell
+            </td>
+            <td>
+                Another cell
+            </td>
+            <td>
+                And another one
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Cell 2
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Cell three
+            </td>
+        </tr>
+    </table>
+
+
+    <table border="1" width="100%">
+        <tbody>
+            <tr>
+                <td colspan="3"> 1</td>
+                
+            </tr>
+            <tr>
+                <td rowspan="2"> 1</td>
+                <td colspan="2"> 2</td>
+                
+            </tr>
+            <tr>
+        
+                <td> 2</td>
+                <td> 3</td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+    <table border="1" width="100%">
+        <tr>
+            <td>data</td>
+            <td colspan="2" rowspan="2">data</td>
+            
+        </tr>
+        <tr>
+            <td>data</td>
+          
+        </tr>
+        <tr>
+            <td colspan="3">data</td>
+        </tr>
+    </table>
+
+    <table border="1" width="100%">
+        <tr>
+            <th colspan="2">
+                <h1>
+                    This is a table header, not a table data cell. That is why it is centered!
+                </h1>
+            </th>
+        </tr>
+        <tr>
+            <td width="20%">
+                <h3>
+                    Navigation
+                </h3>
+            </td>
+            <td>
+                <h3>
+                    Content
+                </h3>
+            </td>
+        </tr>
+    </table>
+
+    <div style="padding: 40px; color: white; background-color: black;"">
+       
+        This is a div that was edited with inline css. inside the div tag, we wrote style="padding: 40px; color: white; background-color: black;"
+
+    </div>
+
+    <style>
+        .classNameHere{
+            padding: 15px;
+            color: white;
+            background-color: red;
+        }
+        .uppercase{
+            text-transform: uppercase;
+        }
+        #testingId{
+            border: 15px solid blue;
+
+        }
+
+</style>
+
+       <div class="classNameHere"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ducimus, harum expedita error recusandae tempora, voluptatem vel deleniti mollitia qui tenetur voluptates? Doloremque, magnam quis! Mollitia provident ad ipsum cum!
+       </div>
+       <div class="classNameHere uppercase">
+         This div is using the className here class and the uppercase class. Two add two classe to an element, you sinmply follow this format within the tag
+         class="firstClass secondClass thirdClass etc"
+       </div>
+       <div class="classNameHere">
+            In order to make this red and have a padding of 15, we made a class in the style element of this page, and then gave this div the class.
+            In style, we declared the class by saying 
+            .classNameHere{ }
+            and then in the div tag, class="classNameHere"
+       </div>
+       <div id="testingId">
+        This is testing what an Id does. Rememember, to initialize an id, you start with a hashtag in the style block, and then to refer to the id, you do id="idName"
+       </div>
+
+       <pre>
+            This is some example text
+            something here
+            We are writing this with the &lt;pre&gt;
+            &lt;/pre&gt; tag
+            THIS TAG MAKES THINGS WHITE SPACE SENSITIVE
+       </pre>
+       <p>
+        <code>This is within the code tag to change the font. not whitespace sensitive</code> Voluptatem neque voluptas id? Provident expedita quas quasi? Debitis corrupti asperiores molestiae enim voluptates earum facere provident eaque! Impedit et saepe eius?
+       </p>
+
+       <!-- Note how input was a self closing tag,and text is contained in the value="" attribute -->
+       <form action="">
+            <input name="password" type="password" value="Hello World" placeholder="Enter your Name">
+            <textarea name="addess" id="" cols="50" rows="5" placeholder="WOW A PLACEHOLDER!!!">Text in header
+Whitespace matters for some odd reason in textarea
+The biggest difference between input and textarea is that textarea has columns and rows and the value inbetween the opening and closing tags, not in the actual opening tag</textarea>
+
+            <button type="submit">Click me!</button>
+
+       </form>
+
+       <form action="somepage.html" method="GET">
+       </form>
+
+       <br>
+       <br>
+       <div>
+        <h4>The form below is the same as above, but using divs so it looks better</h4>
+       </div>
+       <br>
+
+       <form action="">
+        <div>
+            <input required type="email" name="email" id="" value="Default" placeholder="Enter your password" >
+        </div>
+        <div>
+            <textarea  required name="Address" id="" cols="50" rows="10" placeholder="Enter your address">Whitespace matters!</textarea>
+        </div>
+        <div>
+            <select name="Selected_option">
+                <option value="" disabled="disabled"> 
+                    Disabled
+                </option>
+                <option value="value1">This is Value1</option>
+                <option value="value1">This is Value1</option>
+                <option value="value1">This is Value1</option>
+                <option value="value1">This is Value1</option>
+                <option value="value1">This is Value1</option>
+                <option value="value1">This is Value1</option>
+                <option value="value1">This is Value1</option>
+                <option value="default-selected" selected="selected">Selected by Default</option>
+
+            </select>
+        </div>
+        <div>
+            <button type="submit">Submit this form!</button>
+        </div>
+
+       </form>
+
+
+       <h3>Embeds</h3>
+
+       <iframe width="703" height="395" src="https://www.youtube.com/embed/nMZ7D100rSk" title="Fun Day With Sammy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    <h3 id="bottom">This is the bottom of the page. used id="bottom" within the h3 to make this</h3>
+
+
+    <div>
+        <a href="#top">Go to top</a>
+        &copy 2022;
+    </div>
+</body>
+</body>
+</body>
+</html>
